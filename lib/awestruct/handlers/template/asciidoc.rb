@@ -34,6 +34,7 @@ module Tilt
       filtered['title'] = filtered['doctitle'] = doc.doctitle
       filtered['date'] ||= doc.attributes['revdate'] unless doc.attributes['revdate'].nil?
       filtered['author'] = doc.attributes['author'] unless doc.attributes['author'].nil?
+      filtered['authors'] = doc.attributes['authors'] unless doc.attributes['authors'].nil?
 
       filtered
     end
