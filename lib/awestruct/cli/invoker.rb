@@ -112,6 +112,7 @@ module Awestruct
           return
         end
 
+        deploy_config['source_dir'] ||= @config.dir
         Awestruct::CLI::Deploy.new( config, deploy_config ).run
       end
 

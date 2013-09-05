@@ -1,6 +1,6 @@
 require 'awestruct/deployers'
 require 'awestruct/compatibility'
-Dir[ File.join( File.dirname(__FILE__), '..', 'scm' '*.rb' ) ].each do |f|
+Dir[ File.join( File.dirname(__FILE__), '..', 'scm', '*.rb' ) ].each do |f|
   begin
     require f
   rescue LoadError => e
