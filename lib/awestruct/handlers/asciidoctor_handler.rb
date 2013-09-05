@@ -91,6 +91,7 @@ module Awestruct
         if @front_matter['header_footer']
           opts[:header_footer] = true
         end
+        opts[:base_dir] ||= (File.dirname path)
         opts
       end
 
